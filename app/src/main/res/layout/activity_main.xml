@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/baroque"
+        style="@style/CategoryStyle"
+        android:background="@color/baroque_music"
+        android:text="@string/baroque_music" />
+
+    <TextView
+        android:id="@+id/classical"
+        style="@style/CategoryStyle"
+        android:background="@color/classical_music"
+        android:text="@string/classical_music" />
+
+    <TextView
+        android:id="@+id/romantic"
+        style="@style/CategoryStyle"
+        android:background="@color/romantic_music"
+        android:text="@string/romantic_music" />
+
+</LinearLayout>

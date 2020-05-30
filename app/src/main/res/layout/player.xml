@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:src="@drawable/harp" />
+
+    <TextView
+        android:id="@+id/player_opus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="@dimen/player_opus_text"
+        tools:text="Opus" />
+
+    <TextView
+        android:id="@+id/player_composer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="@dimen/player_composer_text"
+        tools:text="Composer" />
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:padding="@dimen/activity_vertical_margin"
+        android:progress="10" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/activity_vertical_margin">
+
+        <Button
+            style="@style/ButtonStyle"
+            android:background="@color/pause_button"
+            android:text="@string/pause_button"  />
+
+        <Button
+            style="@style/ButtonStyle"
+            android:background="@color/play_button"
+            android:text="@string/play_button" />
+
+        <Button
+            style="@style/ButtonStyle"
+            android:background="@color/stop_button"
+            android:text="@string/stop_button"  />
+
+    </LinearLayout>
+
+</LinearLayout>
